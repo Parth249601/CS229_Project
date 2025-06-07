@@ -1,6 +1,6 @@
 import numpy as np
-import util
-from linear_model import LinearModel
+from . import util
+from .linear_model import LinearModel
 import matplotlib.pyplot as plt
 from sklearn.metrics import classification_report, confusion_matrix
 
@@ -107,5 +107,9 @@ def main(train_path, eval_path, pred_path):
     # *** END CODE HERE ***
 if __name__ == "__main__":
     import sys
-    main("./data/ds1_train.csv", "./data/ds1_valid.csv", "./data/ds1_pred.csv")
+    main(
+        "PS1/Ques1/data/ds1_train.csv",
+        "PS1/Ques1/data/ds1_valid.csv",
+        "PS1/Ques1/output/pred_X.csv"
+    )
     

@@ -1,6 +1,5 @@
 import numpy as np
 import util
-
 from linear_model import LinearModel
 import matplotlib.pyplot as plt
 from sklearn.metrics import classification_report, confusion_matrix
